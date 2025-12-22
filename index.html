@@ -15,6 +15,26 @@
 </head>
 <body>
 
+  <select id="citySelect" style="
+  position:absolute;
+  top:10px;
+  left:50px;
+  z-index:1000;
+  padding:8px;
+  font-size:14px;
+">
+  <option value="">Select a destination</option>
+  <option value="philly">Philadelphia</option>
+  <option value="nyc">New York City</option>
+  <option value="austin">Austin</option>
+  <option value="london">London</option>
+  <option value="paris">Paris</option>
+  <option value="pr">Puerto Rico</option>
+  <option value="fl">Florida</option>
+  <option value="annapolis">Annapolis</option>
+  <option value="dc">Washington D.C.</option>
+</select> 
+
 <div id="map"></div>
 
 <!-- Leaflet JS -->
@@ -24,6 +44,27 @@
 <script src="restaurants-config.js"></script>
 
 <script>
+
+const cities = {
+  philly: {lat: 39.947767, lng: -75.164719, zoom: 13},
+  nyc: {lat: 40.777138, lng: -73.967359, zoom: 13},
+  austin: {lat: 30.271924, lng: -97.739817, zoom: 13},
+  london: {lat: 51.508901, lng: -0.127335, zoom: 13},
+  paris: {lat: 48.857327, lng: 2.349209, zoom: 13},
+  pr: {lat: 18.450092, lng: -66.075937, zoom: 13},
+  fl: {lat: 26.152168, lng: -80.111441, zoom: 13},
+  annapolis: {lat: 38.979569, lng: -76.490231, zoom: 13},
+  dc: {lat: 38.917035, lng: -77.031815, zoom: 13}
+};
+
+document.getElementById('citySelect').addEventListener('change', function () {
+  const cityKey = this.value;
+  if (!cityKey) return;
+
+  const city = cities[cityKey];
+  map.setView([city.lat, city.lng], city.zoom);
+});
+
   // Initialize map (center at Philly)
   const map = L.map('map').setView([39.9526, -75.1652], 13);
 

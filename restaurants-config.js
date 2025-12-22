@@ -18,6 +18,5 @@ const restaurants = [
 {name: "Rockwell and Rose", lat: 39.948198, lng: -75.151837, reel: "https://www.instagram.com/reel/DQ2SyzNDw3d/?igsh=b2t5NDgyMWZsbW1t"},
 {name: "The Goat", lat: 39.951177, lng: -75.172386, reel: "https://www.instagram.com/p/DQAV-mzEu-Q/?igsh=MzZxNXNseWNoeXNo"},
 {name: "Green Egg's Cafe", lat: 39.948083, lng: -75.162491, reel: "https://www.instagram.com/reel/DPKCnD-gKB1/?igsh=MW5wN212dDY4bXBndQ=="},
-{name: "Darling Jack's Tavern", lat: 39.950139, lng: -75.162148, reel: "https://www.instagram.com/reel/DPSJCKLAC8u/?igsh=NWVyZmZ0YnpybWd6"},
-
+{name: "Darling Jack's Tavern", lat: 39.950139, lng: -75.162148, reel: "https://www.instagram.com/reel/DPSJCKLAC8u/?igsh=NWVyZmZ0YnpybWd6"}
   ];

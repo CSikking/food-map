@@ -11,6 +11,24 @@
   <style>
     body { margin:0; }
     #map { height:100vh; width:100%; }
+    #locate-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  cursor: pointer;
+}
+
+#locate-btn:active {
+  transform: scale(0.95);
+}
+
   </style>
 </head>
 <body>
@@ -24,6 +42,7 @@
   font-size:14px;
 ">
   <option value="">Select a destination</option>
+  <option value="world">World View</option>
   <option value="philly">Philadelphia</option>
   <option value="nyc">New York City</option>
   <option value="austin">Austin</option>
@@ -37,6 +56,9 @@
 
 <div id="map"></div>
 
+<!-- Back to my location button -->
+<button id="locate-btn">📍 My Location</button>
+  
 <!-- Leaflet JS -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
@@ -44,7 +66,8 @@
 <script src="restaurants-config.js"></script>
 
 <script>
-
+let userLatLng = null;
+let userMarker = null;
 const cities = {
   philly: {lat: 39.947767, lng: -75.164719, zoom: 13},
   nyc: {lat: 40.777138, lng: -73.967359, zoom: 13},
@@ -54,7 +77,8 @@ const cities = {
   pr: {lat: 18.450092, lng: -66.075937, zoom: 13},
   fl: {lat: 26.152168, lng: -80.111441, zoom: 13},
   annapolis: {lat: 38.979569, lng: -76.490231, zoom: 13},
-  dc: {lat: 38.917035, lng: -77.031815, zoom: 13}
+  dc: {lat: 38.917035, lng: -77.031815, zoom: 13},
+  world: {lat: 20, lng: 0, zoom: 2} 
 };
 
 document.getElementById('citySelect').addEventListener('change', function () {
@@ -87,15 +111,18 @@ document.getElementById('citySelect').addEventListener('change', function () {
   map.locate({setView: true, maxZoom: 16});
 
   function onLocationFound(e) {
-    const radius = e.accuracy / 2;
+  userLatLng = e.latlng;
 
-    // Marker for user location
-    L.marker(e.latlng).addTo(map)
-      .bindPopup("You are here. Explore the map for locations.").openPopup();
-
-    // Optional: accuracy circle
-    L.circle(e.latlng, radius).addTo(map);
+  if (!userMarker) {
+    userMarker = L.marker(userLatLng).addTo(map)
+      .bindPopup("You are here");
+  } else {
+    userMarker.setLatLng(userLatLng);
   }
+
+  map.setView(userLatLng, 16);
+}
+
 
   function onLocationError(e) {
     console.warn("Could not get user location:", e.message);
@@ -103,6 +130,16 @@ document.getElementById('citySelect').addEventListener('change', function () {
 
   map.on('locationfound', onLocationFound);
   map.on('locationerror', onLocationError);
+
+  document.getElementById("locate-btn").addEventListener("click", () => {
+  if (userLatLng) {
+    map.setView(userLatLng, 16);
+    userMarker.openPopup();
+  } else {
+    map.locate({ setView: true, maxZoom: 16 });
+  }
+});
+
 </script>
 
 </body>

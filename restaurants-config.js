@@ -1,8 +1,8 @@
 const restaurants = [
 
 {name: "Giumarello's Restaurant & G Bar", lat: 39.905567, lng: -75.042747, reel: "https://www.instagram.com/reel/DSicND5AGqn/?igsh=MWZ2Y2x4NGlrNHNoNQ=="},
-{name: "Bebo's Cafe", lat: 18.431544, lng: -66.002081, reel: ""},
-{name: "The Mezzanine", lat: 18.466616, lng: -66.116806, reel: ""},
+{name: "Bebo's Cafe", lat: 18.451726, lng: -66.062664, reel: ""},
+{name: "The Mezzanine", lat: 18.466616, lng: -66.116806, reel: "https://www.instagram.com/reel/DSqfPHZAAgS/?igsh=MTR2ZzUxbHcwZXV2dA=="},
 {name: "Cap'n Cat Clam Bar", lat: 39.633355, lng: -75.085565, reel: "https://www.instagram.com/reel/DSQan3cElb5/?igsh=azBmNTdkaW83anMz"},
 {name: "Fat Rabbit", lat: 30.262439, lng: -97.742899, reel: "https://www.instagram.com/reel/DSJA3ynEtYY/?igsh=bWEyZHNzZXFuMGVk"},
 {name: "Razza", lat: 40.717771, lng: -74.044297, reel: "https://www.instagram.com/reel/DSGcDrqACQb/?igsh=d2cwYm5mb2NlMmUw"},

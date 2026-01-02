@@ -90,5 +90,6 @@ const restaurants = [
 {name: "Silk City", lat: 39.961347, lng: -75.146106, reel: "https://www.instagram.com/reel/DF0xu78yCEH/?igsh=MWN1dGsyYzkwdzJsZw=="},
 {name: "Bourbon & Branch", lat: 39.962059, lng: -75.140899, reel: "https://www.instagram.com/reel/DSBSeDiko1D/?igsh=OW41dmY0M3ozdmI1"},
 {name: "Tulip Pasta & Wine Bar", lat: 39.977879, lng: -75.129476, reel: "https://www.instagram.com/reel/DFtQYfjyVH3/?igsh=bTF1YmppNGM2eG50"},
-{name: "Marra's", lat: 39.927991, lng: -75.165894, reel: "https://www.instagram.com/reel/DMv3bDiy4Lz/?igsh=aDh6N3A4bWp1cmYw"}
+{name: "Marra's", lat: 39.927991, lng: -75.165894, reel: "https://www.instagram.com/reel/DMv3bDiy4Lz/?igsh=aDh6N3A4bWp1cmYw"},
+{name: "Casita Miramar", lat: 18.455831, lng: -66.085106, reel: "https://www.instagram.com/reel/DS_FkQkACSH/?igsh=OG9mbnF6eWZybnF5"}
   ];

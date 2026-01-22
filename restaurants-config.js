@@ -93,5 +93,9 @@ const restaurants = [
 {name: "Marra's", lat: 39.927991, lng: -75.165894, reel: "https://www.instagram.com/reel/DMv3bDiy4Lz/?igsh=aDh6N3A4bWp1cmYw"},
 {name: "Casita Miramar", lat: 18.455831, lng: -66.085106, reel: "https://www.instagram.com/reel/DS_FkQkACSH/?igsh=OG9mbnF6eWZybnF5"},
 {name: "Emmy Squared Pizza", lat: 39.941066, lng: -75.15111, reel: "https://www.instagram.com/reel/DTGfYbRgPES/?igsh=c2l2bHd1aWI0dm9t"},
-{name: "Pinky's", lat: 18.4552625959423, lng: -66.0688216102984, reel: "https://www.instagram.com/reel/DTOiYbsElVh/?igsh=eGFjNWo4d3E2bHVv"}
+{name: "Pinky's", lat: 18.4552625959423, lng: -66.0688216102984, reel: "https://www.instagram.com/reel/DTOiYbsElVh/?igsh=eGFjNWo4d3E2bHVv"},
+{name: "Veda", lat: 39.9518950940886, lng: -75.1728604860268, reel: "https://www.instagram.com/reel/DTqidHpAPr1/?igsh=NjU5eTk1Z24zbWQ0"},
+{name: "Verde Mesa", lat: 18.4640083728218, lng: -66.1170598634543, reel: "https://www.instagram.com/reel/DTbaVXZkiRg/?igsh=MTF4NmxwMWNrM2FobA=="},
+{name: "Zahav", lat: 39.9462458341478, lng: -75.1450200160832, reel: "https://www.instagram.com/reel/DTylekHEpIa/?igsh=MWh6YXc4d2QycGN2cg=="},
+{name: "Cafetería Mallorca", lat: 18.4660279499948, lng: -66.114110831113, reel: "https://www.instagram.com/reel/DTwEGBFgMR0/?igsh=aDVrd2hpYjA3Nmd3"}
   ];

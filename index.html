@@ -4,9 +4,7 @@
   <meta charset="UTF-8">
   <title>My Food Map</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta rating="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Leaflet CSS -->
+ 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
   <style>
@@ -104,7 +102,7 @@ document.getElementById('citySelect').addEventListener('change', function () {
     const lng = parseFloat(r.lng);
     if (!isNaN(lat) && !isNaN(lng)) {
       L.marker([lat, lng]).addTo(map)
-        .bindPopup(`<b>${r.name}</b><b>${r.rating}</b><br><a href="${r.reel}" target="_blank">Watch the video →</a>`);
+        .bindPopup(`<b>${r.name}</b><br><a href="${r.reel}" target="_blank">Watch the video →</a>`);
     }
   });
 

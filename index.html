@@ -104,7 +104,7 @@ document.getElementById('citySelect').addEventListener('change', function () {
     const lng = parseFloat(r.lng);
     if (!isNaN(lat) && !isNaN(lng)) {
       L.marker([lat, lng]).addTo(map)
-        .bindPopup(`<b>${r.name}${r.rating}</b><br><a href="${r.reel}" target="_blank">Watch the video →</a>`);
+        .bindPopup(`<b>${r.name}</b><b>${r.rating}</b><br><a href="${r.reel}" target="_blank">Watch the video →</a>`);
     }
   });
 

@@ -97,5 +97,8 @@ const restaurants = [
 {name: "Veda", lat: 39.9518950940886, lng: -75.1728604860268, reel: "https://www.instagram.com/reel/DTqidHpAPr1/?igsh=NjU5eTk1Z24zbWQ0"},
 {name: "Verde Mesa", lat: 18.4640083728218, lng: -66.1170598634543, reel: "https://www.instagram.com/reel/DTbaVXZkiRg/?igsh=MTF4NmxwMWNrM2FobA=="},
 {name: "Zahav", lat: 39.9462458341478, lng: -75.1450200160832, reel: "https://www.instagram.com/reel/DTylekHEpIa/?igsh=MWh6YXc4d2QycGN2cg=="},
-{name: "Cafetería Mallorca", lat: 18.4660279499948, lng: -66.114110831113, reel: "https://www.instagram.com/reel/DTwEGBFgMR0/?igsh=aDVrd2hpYjA3Nmd3"}
+{name: "Cafetería Mallorca", lat: 18.4660279499948, lng: -66.114110831113, reel: "https://www.instagram.com/reel/DTwEGBFgMR0/?igsh=aDVrd2hpYjA3Nmd3"},
+{name: "Sobao", lat: 18.455128, lng: -66.067391, reel: "https://www.instagram.com/p/DUCFoh5gA9_/?igsh=MXA1b3pzb2l1dHR5YQ=="},
+{name: "Vianda", lat: 18.447928, lng: -66.070565, reel: "https://www.instagram.com/reel/DUEqaBmgNS-/?igsh=MXZ0d2xyOW5zOHh3aA=="},
+{name: "Forsythia", lat: 39.948669, lng: -75.145434, reel: "https://www.instagram.com/reel/DUWr_G8gPie/?igsh=MWFjd2dicmo3dG9sdQ=="}
   ];
